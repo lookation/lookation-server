@@ -1,1 +1,19 @@
 == README
+
+location of the app: http://lookation-testing.herokuapp.com/admin
+
+
+APIs exposed:
+
+    http://lookation-testing.herokuapp.com/create
+
+    JSON request to be sent as POST
+
+    {"users": {"phone_number" : "9876543210", "latitude" : "1.23467890", "longitude" : "3.123456789"}}
+
+
+    http://lookation-testing.herokuapp.com/update
+
+    JSON request to be sent as POST
+
+    {"users": {"phone_number" : "9876543210", "latitude" : "1.23467890", "longitude" : "3.123456789"}}
