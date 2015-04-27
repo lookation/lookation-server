@@ -13,7 +13,7 @@ class UsersController < ApplicationController
 
   def update
     phone_number = PhoneNumber.new(user_params[:phone_number]).phone_number
-    user = User.where(phone_number)
+    user = User.where(phone_number: phone_number)
                .first
                .update_attributes(longitude: user_params[:longitude], latitude: user_params[:latitude])
     if user.nil?
